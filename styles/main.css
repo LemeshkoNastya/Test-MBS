@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -364,8 +365,19 @@ template {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */
+}
+
 .sidebar {
+  position: relative;
   overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 150px;
   height: 100vh;
   background: #3A63DE;
@@ -403,10 +415,22 @@ template {
   height: 150px;
 }
 
+.sidebar__menu:nth-child(10) {
+  margin-bottom: 70px;
+}
+
 .sidebar__menu_active {
   background: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px -4px 8px rgba(0, 0, 0, 0.08), inset 0px 4px 8px rgba(0, 0, 0, 0.08);
           box-shadow: inset 0px -4px 8px rgba(0, 0, 0, 0.08), inset 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar__menu_fixed {
+  position: fixed;
+  bottom: 0;
+  width: 150px;
+  height: 106px;
+  background: #3A63DE;
 }
 
 .sidebar__menu_natification::before {
@@ -464,5 +488,25 @@ template {
 
 .sidebar__text_active {
   opacity: 1;
+}
+
+.sidebar__arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar__arrow:nth-child(1) {
+  opacity: 0.2;
+}
+
+.sidebar__arrow:nth-child(2) {
+  opacity: 0.5;
+  margin-top: 27px;
+}
+
+.sidebar__arrow:nth-child(3) {
+  opacity: 0.5;
+  margin-top: 54px;
 }
 /*# sourceMappingURL=main.css.map */
