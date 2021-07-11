@@ -1,0 +1,17 @@
+// Colors
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-accent: #3A63DE;
+$color-red: #FD726A;
+
+$color-shadow: rgba(0, 0, 0, 0.08);
+$color-black-opacity: rgba(0, 0, 0, 0.15);
+
+// Colors elements sidebar
+$sidebar-background: $color-accent;
+$sidebar-text: $color-white;
+$sidebar-background-menu-active: $color-black-opacity;
+$sidebar-shadow-menu-active: $color-shadow;
+$sidebar-natification: $color-red;
+$sidebar-natification-background: $color-accent;
+$sidebar-natification-text: $color-white;
