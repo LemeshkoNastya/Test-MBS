@@ -14,4 +14,16 @@
     background: transparent;  /* опционально */
 }
 
+body {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    width: calc(100% - 150px);
+    height: 100vh;
+    background: $background;
+}
+
 @import "./components/_sidebar";
+@import "./components/_chat-list";

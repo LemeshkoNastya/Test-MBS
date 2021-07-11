@@ -373,6 +373,21 @@ template {
   /* опционально */
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 150px);
+  height: 100vh;
+  background: #FFFFFF;
+}
+
 .sidebar {
   position: relative;
   overflow: auto;
@@ -393,7 +408,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 120px;
 }
 
@@ -513,5 +527,39 @@ template {
 .sidebar__arrow:nth-child(3) {
   opacity: 0.5;
   margin-top: 27px;
+}
+
+.chat-list {
+  width: 380px;
+  height: 100%;
+  border-right: 1px solid #E1E3E6;
+}
+
+.chat-list__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding: 32px 25px 30px;
+  border-bottom: 1px solid #E1E3E6;
+}
+
+.chat-list__icon {
+  width: 19px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.chat-list__input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #818386;
 }
 /*# sourceMappingURL=main.css.map */

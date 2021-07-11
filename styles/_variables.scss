@@ -3,6 +3,8 @@ $color-white: #FFFFFF;
 $color-black: #000000;
 $color-accent: #3A63DE;
 $color-red: #FD726A;
+$color-gray: #E1E3E6;
+$color-gray-dark: #818386;
 
 $color-shadow: rgba(0, 0, 0, 0.08);
 $color-black-opacity: rgba(0, 0, 0, 0.15);
@@ -15,3 +17,9 @@ $sidebar-shadow-menu-active: $color-shadow;
 $sidebar-natification: $color-red;
 $sidebar-natification-background: $color-accent;
 $sidebar-natification-text: $color-white;
+
+// 
+$border: $color-gray;
+
+$background: $color-white;
+$text: $color-gray-dark;

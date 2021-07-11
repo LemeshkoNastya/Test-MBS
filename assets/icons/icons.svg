@@ -33,4 +33,7 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15" id="arrow">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M23.06.94a1.5 1.5 0 010 2.12L12 14.122.94 3.061A1.5 1.5 0 113.06.939L12 9.88 20.94.94a1.5 1.5 0 012.12 0z" fill="#fff"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="search">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05 7.9a5.85 5.85 0 1111.7 0 5.85 5.85 0 01-11.7 0zM7.9.55a7.35 7.35 0 104.64 13.05l3.904 3.905a.75.75 0 101.06-1.06l-3.903-3.905A7.35 7.35 0 007.9.55z" fill="#818386"></path>
+  </symbol>
 </svg>

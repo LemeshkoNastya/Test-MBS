@@ -1,0 +1,29 @@
+.chat-list {
+    width: 380px;
+    height: 100%;
+    border-right: 1px solid $border;
+
+    &__search {
+        display: flex;
+        height: 80px;
+        padding: 32px 25px 30px;
+        border-bottom: 1px solid $border;
+    }
+
+    &__icon {
+        width: 19px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    &__input {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        border: none;
+        outline: none;
+        @include font(poppins-regular);
+        font-size: 15px;
+        color: $text;
+    }
+}
