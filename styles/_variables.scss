@@ -5,9 +5,15 @@ $color-accent: #3A63DE;
 $color-red: #FD726A;
 $color-gray: #E1E3E6;
 $color-gray-dark: #818386;
+$color-blue: #37CFD1;
+$color-black-light: #333333;
+$color-orange: #FF9054;
+$color-green: #44CB7F;
 
 $color-shadow: rgba(0, 0, 0, 0.08);
 $color-black-opacity: rgba(0, 0, 0, 0.15);
+$color-blue-opacity: rgba(55, 207, 209, 0.2);
+$color-orange-opacity: rgba(255, 144, 84, 0.2);
 
 // Colors elements sidebar
 $sidebar-background: $color-accent;
@@ -18,8 +24,23 @@ $sidebar-natification: $color-red;
 $sidebar-natification-background: $color-accent;
 $sidebar-natification-text: $color-white;
 
-// 
-$border: $color-gray;
+$natification-border: $color-accent;
+$natification-background: $color-red;
+$natification-text: $color-white;
 
+// Colors elements chat list
+$border: $color-gray;
 $background: $color-white;
 $text: $color-gray-dark;
+$name: $color-black-light;
+
+$default-avatar-1: $color-blue-opacity;
+$default-name-avatar-1: $color-blue;
+$default-avatar-2: $color-orange-opacity;
+$default-name-avatar-2: $color-orange;
+
+
+
+
+
+$online: $color-green;

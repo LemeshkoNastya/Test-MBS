@@ -475,7 +475,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 25px;
+  top: 21px;
   right: 38px;
   width: 21px;
   height: 21px;
@@ -530,8 +530,11 @@ body {
 }
 
 .chat-list {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 380px;
-  height: 100%;
+  height: 100vh;
   border-right: 1px solid #E1E3E6;
 }
 
@@ -561,5 +564,162 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #818386;
+}
+
+.chat-list__team {
+  padding: 24px 13px 24px 24px;
+}
+
+.chat-list__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat-list__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #818386;
+}
+
+.chat-list__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: none;
+}
+
+.chat-list__button .chat-list__icon {
+  width: 12px;
+  height: 12px;
+}
+
+.chat-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #E1E3E6;
+}
+
+.chat-list__people {
+  padding: 1px 13px 24px 24px;
+}
+
+.item {
+  position: relative;
+  padding: 5px 0 22px 24px;
+  margin-bottom: 20px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item__avatar {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+  border-radius: 15px;
+}
+
+.item__default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.item__default-1 {
+  background: rgba(55, 207, 209, 0.2);
+  color: #37CFD1;
+}
+
+.item__default-2 {
+  background: rgba(255, 144, 84, 0.2);
+  color: #FF9054;
+}
+
+.item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item__name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333333;
+}
+
+.item__message {
+  margin-top: 4px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #818386;
+}
+
+.item__badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21px;
+  height: 21px;
+  margin-left: 35px;
+  background: #FD726A;
+  color: #FFFFFF;
+}
+
+.item_online::after {
+  content: '';
+  position: absolute;
+  top: 46px;
+  left: 65px;
+  width: 8px;
+  height: 8px;
+  background: #44CB7F;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
