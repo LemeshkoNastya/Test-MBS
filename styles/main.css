@@ -397,6 +397,10 @@ template {
   height: 120px;
 }
 
+.sidebar .logo {
+  margin-bottom: 6px;
+}
+
 .sidebar__menu {
   position: relative;
   display: -webkit-box;
@@ -492,8 +496,9 @@ template {
 
 .sidebar__arrow {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  top: 18px;
+  width: 25px;
+  height: 25px;
 }
 
 .sidebar__arrow:nth-child(1) {
@@ -502,11 +507,11 @@ template {
 
 .sidebar__arrow:nth-child(2) {
   opacity: 0.5;
-  margin-top: 27px;
+  margin-top: 14px;
 }
 
 .sidebar__arrow:nth-child(3) {
   opacity: 0.5;
-  margin-top: 54px;
+  margin-top: 27px;
 }
 /*# sourceMappingURL=main.css.map */
