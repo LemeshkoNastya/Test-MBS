@@ -1,0 +1,64 @@
+.chat {
+    width: calc(100% - 380px);
+    height: 100vh;
+
+    &__header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        padding: 0 30px;
+        border-bottom: 1px solid $border;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 160px;
+        @include font(poppins-regular);
+        font-size: 15px;
+        color: $name;
+
+        img {
+            width: 52px;
+        }
+
+        &_online::after {
+            content: '';
+            position: absolute;
+            top: 54px;
+            left: 72px;
+            width: 8px;
+            height: 8px;
+            background: $online;
+            border: 3px solid $background;
+            border-radius: 10px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 66px;
+        margin-top: 3px
+    }
+
+    &__button {
+        background: $background;
+        border: none;
+    }
+
+    &__icon-plus {
+        width: 13px;
+        height: 13px;
+    }
+
+    &__icon-more {
+        width: 18px;
+        height: 18px;
+    }
+}
