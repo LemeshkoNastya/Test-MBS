@@ -7,11 +7,19 @@
     height: 100vh;
     background: $sidebar-background;
 
+    @include resolution(small-desktop) {
+        width: 100px;
+    }
+
     &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 120px;
+
+        @include resolution(small-desktop) {
+            height: 80px;
+        }
     }
 
     .logo {
@@ -26,6 +34,10 @@
         align-items: center;
         height: 150px;
         cursor: pointer;
+
+        @include resolution(small-desktop) {
+            height: 100px;
+        }
 
         &:nth-child(10) {
             margin-bottom: 70px;
@@ -43,6 +55,11 @@
             width: 150px;
             height: 106px;
             background: $sidebar-background;
+
+            @include resolution(small-desktop) {
+                width: 100px;
+                height: 70px;
+            }
         }
 
         &_natification::before {
@@ -55,6 +72,13 @@
             height: 29px;
             z-index: 1;
             background: $natification-border;
+
+            @include resolution(small-desktop) {
+                top: 4px;
+                right: 14px;
+                width: 23px;
+                height: 23px;
+            }
         }
 
         &_natification::after {
@@ -70,6 +94,13 @@
             z-index: 2;
             background: $natification-background;
             color: $natification-text;
+
+            @include resolution(small-desktop) {
+                top: 8px;
+                right: 18px;
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 

@@ -2,6 +2,10 @@
     width: calc(100% - 380px);
     height: 100vh;
 
+    @include resolution(small-desktop) {
+        width: calc(100% - 312px);
+    }
+
     &__header {
         position: relative;
         display: flex;
@@ -114,6 +118,10 @@
     &__file {
         margin: 0 16px 0 8px;
         width: 258px;
+
+        @include resolution(small-desktop) {
+            width: 195px;
+        }
     }
 
     &__message {
@@ -156,13 +164,9 @@
         }
     }
 
-    
-
     &__avatar {
         width: 52px;
     }
-
-    
 
     &__emoji {
         margin-left: 2px;
@@ -176,8 +180,18 @@
         margin-right: 64px;
         margin-top: -8px;
 
+        @include resolution(desktop) {
+            margin-top: 10px;
+        }
+
         img {
             margin-left: 16px;
+
+            @include resolution(desktop) {
+                &:not(:first-child) {
+                    display: none;
+                }
+            }
         }
 
         &-more {
@@ -195,8 +209,20 @@
         }
     }
 
+    &__settings {
+        @include resolution(small-desktop) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__delete {
         margin-left: 10px;
+
+        @include resolution(small-desktop) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
     }
 
     &__day {
@@ -295,5 +321,10 @@
         height: 56px;
         background-color: $button-send;
         cursor: pointer;
+
+        @include resolution(small-desktop) {
+            width: 46px;
+            height: 46px;
+        }
     }
 }

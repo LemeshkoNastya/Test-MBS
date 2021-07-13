@@ -23,6 +23,10 @@ body {
     width: calc(100% - 150px);
     height: 100vh;
     background: $background;
+
+    @include resolution(small-desktop) {
+        width: calc(100% - 100px);
+    }
 }
 
 @import "./components/_sidebar";
