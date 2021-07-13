@@ -9,11 +9,15 @@ $color-blue: #37CFD1;
 $color-black-light: #333333;
 $color-orange: #FF9054;
 $color-green: #44CB7F;
+$color-body-dark: #595F69;
+$color-gray-light: #F2F5FA;
 
 $color-shadow: rgba(0, 0, 0, 0.08);
 $color-black-opacity: rgba(0, 0, 0, 0.15);
 $color-blue-opacity: rgba(55, 207, 209, 0.2);
 $color-orange-opacity: rgba(255, 144, 84, 0.2);
+$color-accent-opacity: rgba(58, 99, 222, 0.1);
+$color-accent-opacity-2: rgba(58, 99, 222, 0.08);
 
 // Colors elements sidebar
 $sidebar-background: $color-accent;
@@ -39,8 +43,23 @@ $default-name-avatar-1: $color-blue;
 $default-avatar-2: $color-orange-opacity;
 $default-name-avatar-2: $color-orange;
 
-
-
-
-
 $online: $color-green;
+
+$message-background: $color-accent;
+$message-user-background: $color-gray-light;
+$message-text: $color-white;
+$message-user-text: $color-body-dark;
+$message-data: $color-gray-dark;
+
+$attention-background: $color-accent-opacity;
+$attention-background-action: $color-accent;
+$attention-text: $color-accent;
+$attention-text-action: $color-white;
+$attention-background-2: $color-accent-opacity-2;
+$attention-name: $color-black-light;
+
+
+$day-text: $color-gray-dark;
+$day-line: $color-gray;
+
+$button-send: $color-accent;
