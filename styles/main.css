@@ -431,6 +431,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 150px;
+  cursor: pointer;
 }
 
 .sidebar__menu:nth-child(10) {
@@ -551,6 +552,7 @@ body {
   width: 19px;
   height: 18px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .chat-list__input {
@@ -627,6 +629,7 @@ body {
   position: relative;
   padding: 5px 0 22px 24px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .item:last-child {
@@ -801,11 +804,13 @@ body {
 .chat__icon-plus {
   width: 13px;
   height: 13px;
+  cursor: pointer;
 }
 
 .chat__icon-more {
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
 .chat__container {
@@ -980,6 +985,7 @@ body {
   font-size: 15px;
   background: rgba(58, 99, 222, 0.1);
   color: #3A63DE;
+  cursor: pointer;
 }
 
 .chat__delete {
@@ -1085,12 +1091,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
 }
 
 .write-message__icon {
   width: 22px;
   height: 22px;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .write-message__text {
@@ -1109,5 +1117,6 @@ body {
   width: 56px;
   height: 56px;
   background-color: #3A63DE;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

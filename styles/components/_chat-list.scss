@@ -17,6 +17,7 @@
         width: 19px;
         height: 18px;
         margin-right: 10px;
+        cursor: pointer;
     }
 
     &__input {
@@ -74,6 +75,7 @@
     position: relative;
     padding: 5px 0 22px 24px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     &:last-child {
         margin-bottom: 0;
