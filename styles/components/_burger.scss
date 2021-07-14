@@ -1,0 +1,9 @@
+.burger {
+    display: none;
+
+    @include resolution(small-tablet) {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+}

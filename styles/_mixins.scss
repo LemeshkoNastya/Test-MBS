@@ -1,9 +1,4 @@
 @mixin resolution($breakpoint) {
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 1800px) {
-          @content;
-        }
-    }
     @if $breakpoint == desktop {
         @media (max-width: 1200px) {
           @content;
@@ -17,6 +12,11 @@
     @if $breakpoint == tablet {
         @media (max-width: 768px) {
               @content;
+        }
+    }
+    @if $breakpoint == small-tablet {
+        @media (max-width: 610px) {
+            @content;
         }
     }
     @if $breakpoint == big-mobile {

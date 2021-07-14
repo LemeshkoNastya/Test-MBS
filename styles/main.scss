@@ -27,8 +27,17 @@ body {
     @include resolution(small-desktop) {
         width: calc(100% - 100px);
     }
+
+    @include resolution(tablet) {
+        width: calc(100% - 85px);
+    }
+
+    @include resolution(small-tablet) {
+        width: 100%;
+    }
 }
 
 @import "./components/_sidebar";
 @import "./components/_chat-list";
 @import "./components/_chat";
+@import "./components/burger";

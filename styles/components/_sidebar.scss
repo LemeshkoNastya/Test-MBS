@@ -11,6 +11,18 @@
         width: 100px;
     }
 
+    @include resolution(tablet) {
+        width: 85px;
+    }
+
+    @include resolution(small-tablet) {
+        width: 100px;
+    }
+
+    @include resolution(big-mobile) {
+        display: none;
+    }
+
     &__logo {
         display: flex;
         justify-content: center;
@@ -36,6 +48,10 @@
         cursor: pointer;
 
         @include resolution(small-desktop) {
+            height: 120px;
+        }
+
+        @include resolution(tablet) {
             height: 100px;
         }
 
@@ -59,6 +75,10 @@
             @include resolution(small-desktop) {
                 width: 100px;
                 height: 70px;
+            }
+
+            @include resolution(tablet) {
+                width: 85px;
             }
         }
 
@@ -123,6 +143,10 @@
 
         &_active {
             opacity: 1;
+        }
+
+        @include resolution(tablet) {
+            text-align: center;
         }
     }
 

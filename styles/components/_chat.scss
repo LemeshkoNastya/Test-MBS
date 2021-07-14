@@ -6,6 +6,14 @@
         width: calc(100% - 312px);
     }
 
+    @include resolution(tablet) {
+        width: calc(100% - 230px);
+    }
+
+    @include resolution(small-tablet) {
+        width: 100%;
+    }
+
     &__header {
         position: relative;
         display: flex;
@@ -15,6 +23,10 @@
         height: 80px;
         padding: 0 30px;
         border-bottom: 1px solid $border;
+
+        @include resolution(tablet) {
+            padding: 0 10px;
+        }
     }
 
     &__user {
@@ -40,6 +52,26 @@
             background: $online;
             border: 3px solid $background;
             border-radius: 10px;
+
+            @include resolution(tablet) {
+                left: 54px;
+            }
+
+            @include resolution(small-tablet) {
+                left: 41%;
+            }
+
+            @media (max-width: 520px) {
+                left: 40%;
+            }
+
+            @media (max-width: 400px) {
+                left: 39%;
+            }
+
+            @media (max-width: 360px) {
+                left: 37%;
+            }
         }
     }
 
@@ -48,7 +80,11 @@
         justify-content: space-between;
         align-items: center;
         width: 66px;
-        margin-top: 3px
+        margin-top: 3px;
+
+        @include resolution(tablet) {
+            width: 48px;
+        }
     }
 
     &__button {
@@ -74,6 +110,10 @@
         -ms-overflow-style: none;
         margin: 24px 30px 0;
         height: calc(100vh - 104px - 76px);
+
+        @include resolution(tablet) {
+            margin: 24px 10px 0;
+        }
     }
 
     &__content {
@@ -121,6 +161,10 @@
 
         @include resolution(small-desktop) {
             width: 195px;
+        }
+
+        @include resolution(tablet) {
+            width: 130px;
         }
     }
 
@@ -293,10 +337,18 @@
     align-items: center;
     padding: 9px 10px 10px 30px;
 
+    @include resolution(tablet) {
+        padding: 10px;
+    }
+
     &__form {
         display: flex;
         align-items: center;
         width: 80%;
+
+        @include resolution(tablet) {
+            width: 100%;
+        }
     }
 
     &__icon {
@@ -304,6 +356,18 @@
         height: 22px;
         margin-right: 16px;
         cursor: pointer;
+
+        @include resolution(tablet) {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        @include resolution(small-tablet) {
+            width: 22px;
+            height: 22px;
+            margin-right: 16px;
+        }
     }
 
     &__text {
@@ -313,6 +377,10 @@
         color: $text;
         border: none;
         outline: none;
+
+        @include resolution(tablet) {
+            margin-left: 0;
+        }
     }
 
     &__send {
@@ -325,6 +393,7 @@
         @include resolution(small-desktop) {
             width: 46px;
             height: 46px;
+            padding: 10px;
         }
     }
 }
