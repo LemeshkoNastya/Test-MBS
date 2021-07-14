@@ -6,4 +6,36 @@
         width: 30px;
         height: 30px;
     }
+
+    &__rotate {
+        transition: 1s;
+
+        @include resolution(big-mobile) {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.backg {
+    @include resolution(small-tablet) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background: $shadowed-background;
+    }
+}
+
+.shadowed {
+    @include resolution(small-tablet) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 310px;
+        height: 100vh;
+        background: $shadowed;
+    }
 }

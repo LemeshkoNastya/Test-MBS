@@ -15,7 +15,14 @@
     }
 
     @include resolution(small-tablet) {
-        display: none;
+        // display: none;
+        position: fixed;
+        left: -230px;
+        z-index: 1;
+    }
+
+    &__active {
+        left: 80px;
     }
     
     &__search {

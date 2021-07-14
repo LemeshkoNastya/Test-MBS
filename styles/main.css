@@ -436,8 +436,16 @@ body {
 
 @media (max-width: 480px) {
   .sidebar {
-    display: none;
+    width: 80px;
+    position: fixed;
+    left: -100px;
+    z-index: 1;
   }
+}
+
+.sidebar__active {
+  left: 0;
+  z-index: 2;
 }
 
 .sidebar__logo {
@@ -522,6 +530,12 @@ body {
 @media (max-width: 768px) {
   .sidebar__menu_fixed {
     width: 85px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar__menu_fixed {
+    width: 79px;
   }
 }
 
@@ -650,8 +664,14 @@ body {
 
 @media (max-width: 610px) {
   .chat-list {
-    display: none;
+    position: fixed;
+    left: -230px;
+    z-index: 1;
   }
+}
+
+.chat-list__active {
+  left: 80px;
 }
 
 .chat-list__search {
@@ -1490,6 +1510,42 @@ body {
     display: block;
     width: 30px;
     height: 30px;
+  }
+}
+
+.burger__rotate {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 480px) {
+  .burger__rotate {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 610px) {
+  .backg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 610px) {
+  .shadowed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 310px;
+    height: 100vh;
+    background: #FFFFFF;
   }
 }
 /*# sourceMappingURL=main.css.map */
